@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    color: white;
+}
+
+header {
+    background: #699198;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav {
+    align-content: center;
+    background-color: #203236;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+section {
+    height: 100vh;
+    background-image: url('content/car_transparent.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+main {
+    color: white;
+    padding-left: 10px;
+}
+
+p {
+    text-indent: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #BB9F85;
+}
+
+.about img {
+    margin-right: 20px;
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 300px;
+    height: 400px;
+    padding-left: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #203236;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;/* Скрываем выпадающее меню по умолчанию */
+    position: absolute;
+    background-color: #699198;
+    border-radius: 8px;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;/* Показываем меню при наведении */
+}
+
+.dropdown-menu.show {
+    display: block; /* Показываем меню, когда класс show добавлен */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #BB9F85;
+}
